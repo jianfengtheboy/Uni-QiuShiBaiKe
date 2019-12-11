@@ -1,0 +1,29 @@
+{
+    "appInfo": {},
+    "appid": "touristappid",
+    "appkey": "",
+    "condition": {},
+    "editor": {
+        "curPath": "",
+        "expands": [],
+        "markdownUploadTimeMap": {},
+        "paths": [],
+        "recentlyFiles": [
+            "/Users/sunjianfeng/Desktop/uni-app/Uni-QiuShiBaiKe/unpackage/dist/dev/mp-baidu/project.swan.json",
+            "/Users/sunjianfeng/Desktop/uni-app/Uni-QiuShiBaiKe/unpackage/dist/dev/mp-baidu/app.json",
+            "/Users/sunjianfeng/Desktop/uni-app/Uni-QiuShiBaiKe/unpackage/dist/dev/mp-baidu/app.css"
+        ]
+    },
+    "host": "baiduboxapp",
+    "libVersion": "",
+    "projectname": "仿糗事百科",
+    "setting": {
+        "urlCheck": true
+    },
+    "swan": {
+        "baiduboxapp": {
+            "extensionJsVersion": "",
+            "swanJsVersion": "3.120.9"
+        }
+    }
+}
