@@ -8,11 +8,7 @@
         "expands": [],
         "markdownUploadTimeMap": {},
         "paths": [],
-        "recentlyFiles": [
-            "/Users/sunjianfeng/Desktop/uni-app/Uni-QiuShiBaiKe/unpackage/dist/dev/mp-baidu/project.swan.json",
-            "/Users/sunjianfeng/Desktop/uni-app/Uni-QiuShiBaiKe/unpackage/dist/dev/mp-baidu/app.json",
-            "/Users/sunjianfeng/Desktop/uni-app/Uni-QiuShiBaiKe/unpackage/dist/dev/mp-baidu/app.css"
-        ]
+        "recentlyFiles": []
     },
     "host": "baiduboxapp",
     "libVersion": "",
@@ -22,8 +18,8 @@
     },
     "swan": {
         "baiduboxapp": {
-            "extensionJsVersion": "",
-            "swanJsVersion": "3.120.9"
+            "swanJsVersion": "3.120.9",
+            "extensionJsVersion": "1.7.3"
         }
     }
 }
