@@ -1,3 +1,5 @@
 {
+  "defaultTitle": "小纸条",
+  "pullRefresh": true,
   "usingComponents": {}
 }

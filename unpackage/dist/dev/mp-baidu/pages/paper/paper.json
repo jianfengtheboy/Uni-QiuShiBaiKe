@@ -1,4 +1,6 @@
 {
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "小纸条",
   "component": true,
   "usingComponents": {}
 }
