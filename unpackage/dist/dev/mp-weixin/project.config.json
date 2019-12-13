@@ -12,7 +12,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.9.2",
 	"appid": "wx19f46974b1c034ab",
-	"projectname": "%E4%BB%BF%E7%B3%97%E4%BA%8B%E7%99%BE%E7%A7%91",
+	"projectname": "仿糗事百科",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
