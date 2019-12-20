@@ -5,19 +5,23 @@
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				
-			}
-		},
-		onLoad() {
-
-		},
-		methods: {
-
+import indexList from '@/components/index/index-list.vue'
+export default {
+	data() {
+		return {
+			
 		}
+	},
+	components: {
+		indexList
+	},
+	onLoad() {
+
+	},
+	methods: {
+
 	}
+}
 </script>
 
 <style>
