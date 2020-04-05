@@ -1,5 +1,13 @@
+<!--
+ * @Author: SunJianFeng
+ * @LastEditors: SunJianFeng
+ * @Email: jianfengtheboy@163.com
+ * @Date: 2019-08-26 11:41:20
+ * @LastEditTime: 2020-04-05 21:27:36
+ * @Description: 
+ -->
 <template>
-	<view class="content">
+	<view class="uni-tab-bar">
 
 	</view>
 </template>
@@ -24,6 +32,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

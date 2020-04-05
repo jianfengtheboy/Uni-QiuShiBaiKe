@@ -70,6 +70,77 @@ export default {
 			uni.navigateTo({
 				url: '../../pages/user-space/user-space?userid=' + this.item.userid
 			})
+		},
+		// 关注
+		async guanzhu() {
+			try {
+				let [err, res] = await this.$http.post('/follow', {
+						follow_id: this.item.userid
+					}, {
+						token: true,
+						checkToken: true,
+						checkAuth: true
+					})
+					// 错误处理
+					if (!this.$http.errorCheck(err, res)) {
+						return
+					}
+					// 通知首页修改数据
+					uni.showToast({
+						title: '关注成功'
+					})
+					let resdata = {
+					 	type: 'guanzhu',
+					 	userid: this.item.userid,
+					 	data: true
+					}
+					// 通知父组件
+					this.$emit('changeevent', resdata)
+					// 通知首页
+					uni.$emit('updateData', resdata)
+			} catch (e) {
+				return
+			}
+		},
+		// 顶踩
+		async caozuo(type){
+			try {
+				// 操作后的状态
+				let index = (type === 'ding') ? 1 : 2
+				// 状态相同不修改
+				if(this.item.infonum.index === index) return
+				let [err, res] = await this.$http.post('/support', {
+					post_id: this.item.id,
+					type: index - 1
+				}, {
+					token: true,
+					checkToken: true,
+					checkAuth: true
+				})
+				// 错误处理
+				if (!this.$http.errorCheck(err, res)) return
+				uni.showToast({
+					title: index == 1 ? '顶成功' : '踩成功'
+				})
+				let resdata = {
+					type: 'support',
+					post_id: this.item.id,
+					do: type
+				}
+				// 通知父组件
+				this.$emit('changeevent', resdata)
+				// 通知全局
+				uni.$emit('updateData', resdata)
+			} catch (e) {
+				return
+			}
+		},
+		// 进入详情页
+		opendetail() {
+			uni.navigateTo({
+				url: '../../pages/detail/detail?detailData=' + JSON.stringify(this.item)
+			})
+			this.User.addHistoryList(this.item)
 		}
 	}
 }
