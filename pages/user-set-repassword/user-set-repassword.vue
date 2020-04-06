@@ -2,9 +2,9 @@
  * @Author: SunJianFeng
  * @LastEditors: SunJianFeng
  * @Email: jianfengtheboy@163.com
- * @Date: 2019-12-13 23:14:39
- * @LastEditTime: 2020-04-06 19:31:40
- * @Description: paper
+ * @Date: 2020-04-06 19:39:30
+ * @LastEditTime: 2020-04-06 19:39:40
+ * @Description: user-set-repassword
  -->
 <template>
   <div>
@@ -13,7 +13,11 @@
 </template>
 
 <script>
+export default {
+  
+}
 </script>
 
 <style>
+
 </style>

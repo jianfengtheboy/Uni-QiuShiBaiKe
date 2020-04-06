@@ -1,3 +1,11 @@
+/*
+ * @Author: SunJianFeng
+ * @LastEditors: SunJianFeng
+ * @Email: jianfengtheboy@163.com
+ * @Date: 2019-03-29 21:09:30
+ * @LastEditTime: 2020-04-06 19:52:40
+ * @Description: main.js
+ */
 import Vue from 'vue'
 import App from './App'
 
@@ -7,10 +15,23 @@ Vue.config.productionTip = false
 import config from '@/common/config.js'
 Vue.prototype.config = config
 
+import lib from '@/common/lib.js'
+Vue.prototype.lib = lib
+
+import request from '@/common/request.js'
+Vue.prototype.$http = request
+
+import chat from '@/common/chat.js'
+Vue.prototype.$chat = chat
+
+import User from '@/common/user.js'
+Vue.prototype.User = User
+
 App.mpType = 'app'
 
 const app = new Vue({
 	...App,
-	config
+	config,
+	lib
 })
 app.$mount()

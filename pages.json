@@ -22,15 +22,15 @@
 								"float": "left",
 								"fontSize": "22px",
 								"fontSrc": "/static/font/icon.ttf",
-								"text":"\ue609"
+								"text": "\ue609"
 							},
 							{
-								"color": "#000000",
+								"color": "#000000",								 
 								"colorPressed": "#BBBBBB",
-								"float":"right",
-								"fontSize":"22px",
-								"fontSrc":"/static/font/icon.ttf",
-								"text":"\ue653"
+								"float": "right",
+								"fontSize": "22px",
+								"fontSrc": "/static/font/icon.ttf",
+								"text": "\ue653"
 							}
 						]
 					}
@@ -40,7 +40,6 @@
 		{
 			"path": "pages/news/news",
 			"style": {
-				"navigationBarTitleText": "动态",
 				"app-plus": {
 					"titleNView": false,
 					"bounce": "none"
@@ -56,20 +55,20 @@
 					"titleNView": {
 						"buttons": [
 							{
-								"color":"#000000",
-								"colorPressed":"#BBBBBB",
-								"float":"left",
-								"fontSize":"22px",
-								"fontSrc":"/static/font/icon.ttf",
-								"text":"\ue845"
+								"color": "#000000",
+								"colorPressed": "#BBBBBB",
+								"float": "left",
+								"fontSize": "22px",
+								"fontSrc": "/static/font/icon.ttf",
+								"text": "\ue845"
 							},
 							{
-								"color":"#000000",								 
-								"colorPressed":"#BBBBBB",
-								"float":"right",
-								"fontSize":"22px",
-								"fontSrc":"/static/font/icon.ttf",
-								"text":"\ue684"
+								"color": "#000000",								 
+								"colorPressed": "#BBBBBB",
+								"float": "right",
+								"fontSize": "22px",
+								"fontSrc": "/static/font/icon.ttf",
+								"text": "\ue684"
 							}
 						]
 					}
@@ -92,8 +91,254 @@
 					}
 				}
 			}
-		}
-	],
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"scrollIndicator": "none",
+					"bounce": "none",
+					"titleNView": {
+						"autoBackButton": false,
+						"searchInput": {
+							"align": "left",
+							"backgroundColor": "#F7F7F7",
+							"borderRadius": "4px",
+							"placeholder": "搜索糗事",
+							"placeholderColor": "#CCCCCC",
+							"disabled": false
+						},
+						"buttons": [
+							{
+								"color": "#000000",								 
+								"colorPressed": "#BBBBBB",
+								"float": "right",
+								"fontSize": "16px",
+								"text": "取消"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/add-input/add-input",
+			"style": {
+				"app-plus": {
+					"animationType": "slide-in-bottom",
+					"animationDuration": 200,
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/topic-nav/topic-nav",
+			"style": {
+				"navigationBarTitleText": "话题分类",
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/topic-detail/topic-detail",
+			"style": {
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"animationType": "slide-in-bottom",
+					"animationDuration": 200,
+					"scrollIndicator": "none",
+					"titleNView": {
+						"type": "transparent",
+						"buttons": [
+							{
+								"type": "menu"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/user-list/user-list",
+			"style": {
+				"app-plus": {
+					"animationType": "slide-in-left",
+					"scrollIndicator": "none",
+					"bounce": "none",
+					"titleNView": {
+						"autoBackButton": false,
+						"searchInput": {
+							"align": "left",
+							"backgroundColor": "#F7F7F7",
+							"borderRadius": "4px",
+							"placeholder": "搜索用户",
+							"placeholderColor": "#CCCCCC",
+							"disabled": true
+						},
+						"buttons": [
+							{
+								"color": "#000000",								 
+								"colorPressed": "#BBBBBB",
+								"float": "right",
+								"fontSize": "16px",
+								"text": "取消"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/user-chat/user-chat",
+			"style": {
+				"navigationBarTitleText": "聊天页",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							{
+								"color": "#000000",								 
+								"colorPressed": "#BBBBBB",
+								"float": "right",
+								"fontSize": "22px",
+								"fontSrc": "/static/font/icon.ttf",
+								"text": "\ue628"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "内容页",
+				"app-plus": {
+					"scrollIndicator": "none",
+					"bounce": "none",
+					"titleNView": {
+						"buttons": [
+							{
+								"type": "menu"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/user-set/user-set",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+		},
+		{
+			"path": "pages/user-set-repassword/user-set-repassword",
+			"style": {
+				"navigationBarTitleText": "修改密码",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/user-set-email/user-set-email",
+			"style": {
+				"navigationBarTitleText": "修改邮箱",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/user-set-userinfo/user-set-userinfo",
+			"style": {
+				"navigationBarTitleText": "修改资料",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/user-set-help/user-set-help",
+			"style": {
+				"navigationBarTitleText": "意见反馈",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/user-set-about/user-set-about",
+			"style": {
+				"navigationBarTitleText": "关于仿糗百",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"app-plus": {
+					"titleNView": false,
+					"bounce": "none",
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/user-space/user-space",
+			"style": {
+				"navigationBarTitleText": "个人空间",
+				"app-plus": {
+					"scrollIndicator": "none",
+					"titleNView": {
+						"type": "transparent",
+						"buttons": [
+							{
+								"type": "menu"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/user-bind-phone/user-bind-phone",
+			"style": {
+				"navigationBarTitleText": "绑定手机"
+			}
+		},
+		{
+			"path": "pages/user-safe/user-safe",
+			"style": {
+				"navigationBarTitleText": "账号与安全"
+			}
+		},
+		{
+			"path": "pages/user-feedback/user-feedback",
+			"style": {
+				"navigationBarTitleText": "意见反馈"
+			}
+		},
+		{
+			"path": "pages/user-history/user-history",
+			"style": {
+				"navigationBarTitleText": "浏览历史",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							{
+								"type": "close"
+							}
+						]
+					}
+				}
+			}
+    }
+  ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "糗事百科",
@@ -102,9 +347,9 @@
 	},
 	"tabBar": {
 		"color": "#B5B5B5",
-		"selectedColor" : "#FEE42B",
-		"borderStyle" : "black",
-		"backgroundColor" : "#FFFFFF",
+		"selectedColor": "#FEE42B",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
 		"list": [
 			{
 				"pagePath": "pages/index/index",
